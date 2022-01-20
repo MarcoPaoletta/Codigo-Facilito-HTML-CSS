@@ -1,0 +1,137 @@
+body {
+    margin: 0em;
+    font-family: 'Noto Sans', sans-serif;
+  }
+  
+  h1,h2,h3,h4,h5 {
+    font-family: 'Fjalla One', sans-serif;
+  }
+  
+  .navbar-brand {
+    margin-left: 20px;
+  }
+
+  .cover {
+    height: 400px;
+    background-image: url("assets/header.jpg");
+    color: white;
+    background-position: center;
+    background-size: cover; /* make the image responsive */
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken; /* set blend mode to make it darker */
+  }
+  
+  .cover-small {
+    height: 200px;
+    background-blend-mode: normal;
+  }
+  
+  .card {
+    /* add shadow */
+    border: 0 !important; /* delete the border predetermined by Bootstrap, that is why we use !important */
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+      0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  }
+  
+  .card-title {
+    min-height: 3rem; /* put down a bit the text of the card */
+  }
+  
+  .card-text {
+    min-height: 7rem; /* make the card bigger */
+  }
+  
+  .flex-fill {
+    margin-right: 2px; /* move the send email button to the right */
+  }
+  
+  .product-stripe, .slider {
+    overflow-x: scroll; /* add a scroll bar in the x axis when the elements overflow */
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  
+  .stripe-container, .slider-container {
+    display: flex; /* show the products in the same line */
+  }
+  
+  .stripe-container .card { /* each card of the stripe */
+    width: 300px;
+    flex-shrink: 0; /* disable resizing */
+    margin-right: 1rem;  /* add space between every card */
+  }
+  
+  .responsive-iframe {
+    position: relative;
+    padding-top: 56.25%;
+  }
+  
+  .responsive-iframe iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .slider {
+    overflow-x: hidden;
+    width: 700px;
+    /* center images */
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  .slider-container {
+    transform: translateX(0); /* start in the init of the anim */
+    animation: slider 10s infinite;  /* name of the anim - duration - forever playing */
+  }
+  
+  .image-container {
+    width: 100%;
+    padding-top: 56.25%;
+    background-size: cover; /* the background will always fit the whole div */
+    background-position: center;
+    flex-shrink: 0; /* disable all the images to be in the same place and not to being resizable */
+  }
+  
+  /* the procces is to change the image by doing -100% / -200% / -300% / -400% using the translateX property  */
+  /* also, we stop the image for a while so that we can see it */
+  @keyframes slider {
+    0% {
+      transform: translateX(0);
+    }
+    
+    20% {
+      transform: translateX(0);
+    }
+    
+    25% {
+      transform: translateX(-100%);
+    }
+    
+    45% {
+      transform: translateX(-100%);
+    }
+    
+    50% {
+      transform: translateX(-200%);
+    }
+    
+    70% {
+      transform: translateX(-200%);
+    }
+        
+    75% {
+      transform: translateX(-300%);
+    }
+    
+    95% {
+      transform: translateX(-300%)
+    }
+    
+    100% {
+      transform: translateX(0)
+    }
+    
+  }
