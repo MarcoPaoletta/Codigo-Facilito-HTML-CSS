@@ -1,5 +1,6 @@
 # Codigo-Facilito-HTML-CSS
 * Pagina web sobre una cafetería totalmente funcional y adaptable para otro tipo de comercios
+* En este proyecto, se utilizo [Bootstrap](https://getbootstrap.com), es una libreria que nos facilita considerablemente el desarrollo de una pagina web aplicando estilos ya predefinidos, por ejemplo
 
 ---
 # Partes de la pagina web
