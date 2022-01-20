@@ -2,13 +2,13 @@
 * Pagina web sobre una cafetería totalmente funcional y adaptable para otro tipo de comercios
 
 ---
-# Inicio
-<img src="#">
+# Partes de la pagina web
 
----
+### Principal
+<img src="https://github.com/MarcoPaoletta/Codigo-Facilito-HTML-CSS/blob/master/principal.gif">
 
-# Acerca de
-<img src="#">
+### Acerca de
+<img src="https://github.com/MarcoPaoletta/Codigo-Facilito-HTML-CSS/blob/master/acerca_de.gif">
 
 ---
 
